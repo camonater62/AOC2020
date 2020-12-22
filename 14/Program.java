@@ -82,7 +82,6 @@ public class Program {
                 masks.add(masked);
                 for(int i = 0; i < masks.size(); i++) {
                     if(masks.get(i).contains("X")) {
-                        
                         String base = masks.get(i);
                         masks.add(base.replaceFirst("X", "0"));
                         masks.add(base.replaceFirst("X", "1"));
