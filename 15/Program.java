@@ -26,8 +26,10 @@ public class Program {
                 game.add(Math.abs(round - num1 - 1));
             }
             map.put(last, round - 1);
+
+            if(round == 2020 - 1)     System.out.printf("P1: %d\n", game.get(game.size() - 1));
+            if(round == 30000000 - 1) System.out.printf("P2: %d\n", game.get(game.size() - 1));
         }
-        System.out.println(game.get(game.size() - 1));
         
     }
 }
